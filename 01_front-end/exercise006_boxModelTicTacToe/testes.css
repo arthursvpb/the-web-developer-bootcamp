@@ -1,0 +1,60 @@
+/* p{
+  font-family: "Arial";
+  line-height: 1.5;
+  text-align: right;
+  text-decoration: underline;
+} */
+
+/* h1{
+  font-family: Georgia;
+  text-align: right; */
+  /* text-decoration: line-through; */
+
+  /* Using google fonts */
+  /* font-family: 'Margarine', cursive;
+} */
+
+/* Em = escalável = double the size
+em = dinamico
+se eu mudar os pixels ele muda também.
+em está nested inside seus parents
+p span{
+em irá dobrar de acordo com o seu pai "p"
+} */
+
+/* span{
+  font-size: 2em;
+} */
+
+/* p{
+font-size: 40px;
+} */
+
+
+/* THE BOX MODEL */
+
+
+p{
+  /* Border */
+  border: 2px solid gray;
+
+  /* Content (Element) - width and height */
+  width: 50%; /*50% of the parent element (body in this case) - responsive*/
+  height: 20px;
+
+  /* Padding (preenchimento)*/
+  padding: 10px; /* Padding on all sides*/
+
+
+    /* padding-left: 40px; */
+
+    /* PADDING STANDART -> TOP RIGHT BOTTOM LEFT (HORÁRIO) */
+
+  /* Margin (margem do rio) (space between images)*/
+  margin: 100px auto 200px auto; /*Mesmo padrão horário do padding*/
+
+   /* Margin: auto; -> muito útil para centralizar e colocar a margem necessária */
+
+   margin: 0 /* cima e baixo para zero */ auto; /* auto para direita e esquerda*/
+
+}

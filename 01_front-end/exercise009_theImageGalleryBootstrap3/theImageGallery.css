@@ -1,0 +1,55 @@
+/* MY CUSTOM CSS */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+
+  /* Para ajeitar o problema da nav bar fixa */
+  padding-top: 70px;
+}
+
+
+
+.navbar-default{
+  background-color: rgb(55, 72, 99);
+
+  /* To take of the border and border radius from the navbar */
+  border: 0;
+  border-radius: 0;
+}
+
+/* Custom color for brand name */
+.navbar-default .navbar-brand {
+  color: rgb(239, 244, 252);
+}
+
+/* Changing the hover of the brand */
+.navbar-default .navbar-brand:hover {
+  color: #000;
+}
+
+/* Adding custom color for right li a */
+.nav.navbar-nav.navbar-right li a {
+  color: rgb(239, 244, 252);
+}
+
+/* Adding custom color for left li a */
+.nav.navbar-nav li a{
+  color: rgb(239, 244, 252);
+}
+
+/* Hover for li a */
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #000;
+  background-color: transparent;
+}
+
+/* Ajeitando para as imagens caberem nas divs corretamente. */
+/* EDIT: não precisamos fazer isso para ajustar a imagem, podemos usar a classe .thumbnail */
+/* img{
+  max-width: 100%;
+  border: 3px double gray;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+} */

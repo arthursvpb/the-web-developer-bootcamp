@@ -1,0 +1,10 @@
+<h1>Todo page</h1>
+
+<% todo.forEach(function(todo) { %>
+<li><%= todo %></li>
+<% }); %>
+
+<form action="/addtodo" method="post">
+  <input type="text" name="newtodo" placeholder="Todo Name" />
+  <button>Add todo</button>
+</form>

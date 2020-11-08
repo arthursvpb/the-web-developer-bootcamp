@@ -1,0 +1,51 @@
+/* Ajeitando o problema da imagem que termina o documento HTML */
+html{
+  /* O html vai cobrir a pagina toda, ajeitando o problema com a imagem, fazendo um efeito muito legal. */
+  height: 100%
+}
+
+
+body{
+  /* Adding background image */
+  background: url("https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+
+  /* Fitting the background */
+  background-size: cover;
+  background-position: center;
+  /* Não preciso desse background no repeat pois ajeitei o HTML para ter height 100% */
+  /* background-repeat: no-repeat; */
+
+  font-family: Montserrat;
+
+}
+
+.navbar-inverse{
+  /* Retirando as bordas da navbar */
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1{
+  font-weight: bold;
+  font-size: 5em;
+}
+
+/* Mudando a largura do HR */
+hr{
+  width: 50%;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: rgba(0, 0, 0, 0.2);
+}
+
+#content{
+  text-align: center;
+  /* Centralizando a div do titulo principal da pagina */
+  padding: 25% 10%;
+  color: white;
+
+  /* Text shadow para ficar bonito */
+  /* Diferentes tons de cinza */
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+               0px 8px 13px rgba(0, 0, 0, 0.1),
+               0px 18px 23px rgba(0, 0, 0, 0.1);
+}

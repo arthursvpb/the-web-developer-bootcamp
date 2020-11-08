@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="testes.css">
+
+  <!-- JQuery -->
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <title>The Grid System</title>
+</head>
+
+<body>
+
+  <!-- Todo container em bootstrap pode ser dividido em 12 colunas diferentes. -->
+
+  <!-- Usando o Grid System, podemos pegar quantos dessas 12 units cada elemento deve preencher. -->
+
+  <!-- O número 12 é muito importante. -->
+
+  <!-- Bootstrap Grid needs to be inside a container -->
+  <div class="container">
+    <!-- Definimos a linha -->
+    <div class="row">
+      <!-- Dentro de cada linha, podemos definir 12 unidades de coluna -->
+      <!-- Faremos uma divisão 50/50 onde teremos uma div que pegará 6/12 e outra que pegará 6/12-->
+
+      <!-- Quando atingir o LG ocupa 1 unidade -->
+      <!-- Quando ativingir a tela MD ocupa 2 unidades -->
+      <!--
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+      <div class="col-lg-1 col-md-2 pink">COL LG 1</div> -->
+
+      <!-- Se não especificarmos o LG, o ele pegará o MD como referência, então não preciso colocar o LG explicitamente. -->
+      <div class="col-lg-3 col-md-3 col-sm-6 pink">
+        <!-- Posso colocar linhas dentro de linhas para dividir -->
+        <div class="row">
+          <div class="col-lg-6 orange">halfway</div>
+          <div class="col-lg-6 orange">halfway</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG 3</div>
+      <div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG 3</div>
+      <div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG 3</div>
+
+
+    </div>
+  </div>
+
+
+
+</body>
+</html>

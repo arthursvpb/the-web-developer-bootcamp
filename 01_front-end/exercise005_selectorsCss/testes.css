@@ -1,0 +1,40 @@
+/* GENERAL RULE OF CSS
+
+selector {
+property: value;
+anotherProperty: value;
+
+}
+
+# para ID
+. para classes
+
+
+
+*/
+
+body{
+  background-image: url(https://cdn.wallpapersafari.com/23/81/JS1COW.jpg);
+  background-size: cover;
+}
+
+.classe
+{
+  text-align: center;
+  color: rgba(255, 255, 255, .6);
+  font-family: arial;
+}
+
+#vermelho{
+  color: #FFFFDD;
+  font-weight: lighter;
+
+
+  /* Border tem 3 atributos */
+  /* border-color: purple;
+  border-width: 5px;
+  border-style: double; */
+
+  /* Ou podemos usar assim: */
+  border: 2px solid #FFFFDD;
+}

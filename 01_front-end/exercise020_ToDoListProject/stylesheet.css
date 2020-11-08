@@ -1,0 +1,69 @@
+/* Background */
+html {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to right, #5a8142, #429081);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/* Center the table */
+table{
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 5px rgb(30, 79, 64);
+}
+
+/* ToDO header*/
+tr th{
+  text-align: left;
+  padding: 20px 10px 20px 25px;
+  background-color: rgb(89, 172, 87);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Add new todo */
+#newTodo{
+  padding: 0;
+}
+#newTodo input{
+  padding: 20px 10px 20px 25px;
+  font-weight: bold;
+  background-color: rgb(211, 253, 210);
+  border: none;
+  width: 400px;
+  font-size: 1.2em;
+}
+
+/* Todo items */
+tr td{
+  text-align: left;
+  padding: 10px 10px 10px 25px;
+  color: #000;
+  /* cursor: pointer; */
+}
+label{
+  cursor: pointer;
+}
+
+/* New todo plus sign */
+tr th i{
+  float: right;
+}
+
+/* Alternates the colors on the table */
+tbody tr:nth-child(odd){
+  background-color: rgb(211, 253, 210);
+  color: #fff;
+}
+
+/*  Input checkbox*/
+input[type="checkbox"]{
+  float: right;
+  display: none;
+}

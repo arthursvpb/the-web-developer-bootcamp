@@ -1,0 +1,30 @@
+<!-- Including partials: better way of using html tags header and footer -->
+<% include partials/header.ejs %>
+
+<!-- We use <%= %> syntax -->
+<!-- This is regular JavaScript, i can use normally JavaScript functions -->
+<h1>You fell in love with: <%= thingVar.toUpperCase(); %></h1>
+
+<!-- We can do Controw Flow with JS -->
+<!-- Diferent type of EJS tags -->
+
+<!-- <%= %> with equal sign:-->
+<!-- Will be added on HTML -->
+
+<!-- <% %>  only percent-->
+<!-- Used for logic (run the code), not added to the HTML -->
+
+<!-- <%- %>  with dash-->
+<!--  -->
+
+<!-- We have to put <% %>= on every piece of javascript code -->
+<% if(thingVar.toLowerCase() === "rusty"){ %>
+<p>Good choice! Rusty is the best.</p>
+<% } else { %>
+<!-- Even down here -->
+<p>Not <%= thingVar.toLowerCase(); %>! You should have said Rusty.</p>
+<% } %>
+
+<p>P.S. This is the love.ejs file!</p>
+
+<% include partials/footer.ejs %>

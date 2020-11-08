@@ -1,0 +1,13 @@
+body *{
+  font-family: Montserrat;
+}
+
+#jumbotronCustom{
+  background-image: url("header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  /* We can use this way too */
+  /* background: url("image") center center / cover no-repeat;*/
+}

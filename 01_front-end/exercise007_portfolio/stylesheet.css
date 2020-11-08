@@ -1,0 +1,14 @@
+img{
+  width: 30%;
+  float: left; /*retira as bordas da imagem*//* Take things out of the flow of document, bom para criar as proprias bordas */
+  margin: 1.66%; /* margin is 30% so is 90%, we divide 10% by 6 margins of the image and we get 1.66%*/
+}
+
+h1{
+  font-family: 'Germania One', cursive;
+  margin: 1.66%;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(12, 0, 1, 0.4);
+  width: 30%; /* margin */
+}

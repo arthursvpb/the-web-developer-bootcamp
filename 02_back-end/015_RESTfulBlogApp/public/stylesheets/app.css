@@ -1,0 +1,38 @@
+h1 {
+  margin-top: 4em;
+  text-align: center;
+}
+
+i.icon {
+  font-size: 2em;
+}
+
+.container.main {
+  margin: 7em 0 2em 0;
+  text-align: center;
+}
+
+#delete {
+  display: inline;
+}
+
+.imageDiv {
+  width: 45vw;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#blogPosts {
+  margin-top: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+  text-align: center;
+}

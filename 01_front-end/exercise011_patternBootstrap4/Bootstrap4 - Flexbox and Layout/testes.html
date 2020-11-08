@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- My CSS (Tem que ir depois do bootstrap para ganhar na especificidade.) -->
+  <link rel="stylesheet" href="testes.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <title>Flexbox and layout</title>
+</head>
+<body>
+
+  <hr style="margin:100px;">
+
+  <!-- We need to make the container a flexbox. (d-flex) -->
+  <div class="container">
+    <div class="display-1 text-center">Flexbox</div>
+    <div class="border border-dark d-flex espaco">
+      <button class="btn btn-info btn-lg">LARGE</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+    </div>
+  </div>
+
+  <!-- Eixo principal -> Left to right (start to end) JUSTIFY-CONTENT -->
+  <!-- Eixo transversal -> Top to bottom (start to end) ALIGN ITEMS-->
+
+  <!-- justify-content allows to move the items in the flexbox -->
+  <!-- justify-content: start; então está a esquerda -->
+
+  so
+
+  <div class="container">
+    <div class="display-4 text-center">Flexbox justifying end</div>
+    <!-- Changing the direction of the content to end (right) -->
+    <div class="border border-dark d-flex justify-content-end espaco">
+      <button class="btn btn-info btn-lg">LARGE</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="display-4 text-center">Flexbox justifying between</div>
+    <!-- Changing the direction of the content to between -->
+    <div class="border border-dark d-flex justify-content-between espaco">
+      <button class="btn btn-info btn-lg">LARGE</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="display-4 text-center">Flexbox justifying around</div>
+    <!-- Changing the direction of the content to around (between and around) -->
+    <div class="border border-dark d-flex justify-content-around espaco">
+      <button class="btn btn-info btn-lg">LARGE</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+    </div>
+  </div>
+
+  <!-- ALIGN ITEMS REFERE AO EIXO TRANSVERSAL (TOP TO BOTTOM) -->
+
+  <div class="container">
+    <div class="display-4 text-center">Flexbox ALIGN ITEMS</div>
+    <!-- Changing the direction of the items to start(top) -->
+    <div class="border border-dark d-flex justify-content-around align-items-start espaco">
+      <button class="btn btn-info btn-lg">LARGE</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+    </div>
+  </div>
+
+
+
+
+  <!-- DIRECTIONS -->
+
+  <div class="d-flex p-2 justify-content-center align-items-center flex-column">
+    <h1>Directions</h1>
+  </div>
+
+  <!-- If we want to reverse the order of right to left we can use:
+  .flex-row-reverse -->
+
+  <div class="container">
+    <div class="display-4 text-center">Flexbox row-reverse</div>
+
+    <div class="border border-dark d-flex justify-content-around align-items-start flex-row-reverse espaco">
+      <button class="btn btn-info btn-lg">LARGE</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+      <button class="btn btn-warning btn-sm">SMALL</button>
+    </div>
+  </div>
+
+  <!-- For align items at a certain point (size) -->
+  <!-- We can't do for xs so, what we do is: -->
+  <!-- "You're always a column, except:
+  "flex-column flex-md-row" -->
+  <!-- So we have to overwrite, because is mobile first. -->
+  <div class="d-flex flex-column flex-md-row justify-content-between">
+    <button class="btn btn-dark btn-lg">test</button>
+    <button class="btn btn-dark btn-lg">test</button>
+    <button class="btn btn-dark btn-lg">test</button>
+    <button class="btn btn-dark btn-lg">test</button>
+    <button class="btn btn-dark btn-lg">test</button>
+  </div>
+
+  <hr style="margin:100px;">
+
+  <!-- NAVS AND FLEXBOX -->
+
+  <div class="d-flex p-2 justify-content-center align-items-center flex-column">
+    <h1>Navs and flexbox</h1>
+  </div>
+
+
+
+  <!-- Navs are now built with flexbox -->
+  <nav class="nav border flex-column flex-md-row border-primary justify-content-around">
+    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </nav>
+  <!-- Isso torna elas automaticamente com a classe d-flex -->
+
+
+  <hr style="margin:100px;">
+
+
+  <!-- THE GRID SYSTEM -->
+  <div class="d-flex p-2 justify-content-center align-items-center flex-column">
+    <h1>Bootstrap4 grid system</h1>
+  </div>
+  <!--  A little bit different from bootstrap3 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div>
+
+  <!-- row and columns are flexbox -->
+  <div class="row">
+    <h3 class="col border border-info">thing1</h3>
+    <h3 class="col-6 border border-info">thing1</h3>
+    <h3 class="col border border-info">thing2</h3>
+  </div>
+
+
+  <hr style="margin:100px;">
+
+  <!-- The Grid + Flexbox -->
+  <div class="d-flex p-2 justify-content-center align-items-center flex-column">
+    <h1>Grid + Flexbox</h1>
+  </div>
+
+  <!-- Nice utility to control the grid inside the flexbox -->
+
+  <!-- The row and columns are flex by default -->
+  <!-- The default align items value is stretch -->
+
+  <div class="container">
+    <!-- We can move in the grid system with flex utitlites -->
+    <div class="row border justify-content-between align-items-center">
+      <div class="col-sm-3 bg-warning">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore porro pariatur autem ducimus nemo non molestias alias! Pariatur quibusdam, iusto.
+      </div>
+      <div class="col-sm-3 bg-info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit porro, deleniti quam accusamus beatae dignissimos molestias? Nisi dolore necessitatibus consequuntur deleniti nobis! Vel autem consequatur animi, dolores, cumque repellat ullam sequi id dicta doloribus fugit? Veniam, veritatis eaque expedita temporibus vel! Maiores numquam inventore facere dolores placeat eum asperiores.
+      </div>
+      <div class="col-sm-3 bg-warning">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore porro pariatur autem ducimus nemo non molestias alias! Pariatur quibusdam, iusto.
+      </div>
+    </div>
+
+    <!-- ALIGN SELF -->
+    <div class="row border justify-content-center align-items-end">
+      <div class="col-2 bg-dark text-light align-self-start">
+        ALIGN SELF!
+      </div>
+      <div class="col-2 bg-primary">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, aperiam.
+      </div>
+      <div class="col-2 bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus cum, laudantium alias accusamus asperiores a, velit sed incidunt ducimus inventore consectetur quaerat, quidem ratione dignissimos? Incidunt dolorum quasi cumque!
+      </div>
+      <div class="col-2 bg-primary">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, aperiam.
+      </div>
+      <div class="col-2 bg-dark text-light align-self-start">
+        ALIGN SELF!
+      </div>
+    </div>
+
+
+    <!-- The stacks are going to space when hits large -->
+    <div class="row  border text-center justify-content-between">
+      <div class="col-md-6 col-lg-5 bg-dark text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt officiis odit dicta, animi architecto quibusdam est voluptatum modi a. Aliquid vel rerum vitae distinctio officia sequi voluptates labore saepe. Voluptatum ad optio nam magnam aliquid ratione natus quam, ipsam, explicabo!
+      </div>
+      <div class="col-md-6 col-lg-5 bg-dark text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt officiis odit dicta, animi architecto quibusdam est voluptatum modi a. Aliquid vel rerum vitae distinctio officia sequi voluptates labore saepe. Voluptatum ad optio nam magnam aliquid ratione natus quam, ipsam, explicabo!
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

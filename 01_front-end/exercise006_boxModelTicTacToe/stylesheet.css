@@ -1,0 +1,25 @@
+h1{
+  text-align: center;
+  margin: 20px auto;
+}
+
+table{
+  /* border: 1px solid gray; */
+  margin: 0 auto;
+  border-collapse: collapse; /* Junta as células e as linhas*/
+}
+
+td{
+  padding: 50px;
+}
+
+
+#linhas_horizontais{
+  border-bottom: 3px solid gray;
+  border-top: 3px solid gray;
+}
+
+.linhas_verticais{
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+}

@@ -1,0 +1,22 @@
+<!-- Including partials: better way of using html tags header and footer -->
+<% include partials/header.ejs %>
+
+<!-- Adding styles (not the best way of doing it) -->
+<!-- <style>body{color: purple;}</style> -->
+
+<h1>The Posts Page</h1>
+
+<!-- Using for loop -->
+<!-- <% for (let i = 0; i < posts.length; i++) { %>
+    <li>
+        <b><%= posts[i].title %></b> - <%= posts[i].author %>
+    </li>
+<% }; %> -->
+
+<!-- Using forEach loop -->
+<% posts.forEach(function(post) { %>
+<li><b><%= post.title %></b> - <%= post.author %></li>
+<% }); %>
+
+
+<% include partials/footer.ejs %>

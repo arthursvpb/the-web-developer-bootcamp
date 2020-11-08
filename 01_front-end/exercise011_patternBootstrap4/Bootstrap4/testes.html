@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- My CSS (Tem que ir depois do bootstrap para ganhar na especificidade.) -->
+  <link rel="stylesheet" href="testes.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <title>Testes</title>
+</head>
+<body>
+
+
+  <!-- COLORS -->
+  <div class="container">
+    <h1 class="text-danger">I am an H1</h1>
+    <h1 class="text-success">I am an H1</h1>
+    <h1 class="text-primary">I am an H1</h1>
+    <h1 class="text-white bg-dark">I am an H1</h1>
+    <h1 class="text-warning">I am an H1</h1>
+    <h1 class="text-dark bg-light">I am an H1</h1>
+  </div>
+
+  <!-- DISPLAY HEADINGS (BETTER THAN H1) -->
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+
+  <!-- BLOCKQUOTES (BLOCOS DE CITAÇÃO)-->
+  <div class="container-fluid">
+    <blockquote class="blockquote text-right">
+      <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+
+  <!-- REMS and EMS -->
+  <!-- Better for font-sizing than PIXELS. -->
+  <!-- EM =  is equal to the computed font-size of that element’s parent. For example, If there is a div element defined with font-size: 16px then for that div and for its children 1em = 16px. -->
+
+  <!-- REM values are relative to the root html element, not to the parent element. That is, If font-size of the root element is 16px then 1 rem = 16px for all elements. If font-size is not explicitly defined in root element then 1rem will be equal to the default font-size provided by the browser (usually 16px). -->
+
+  <!-- EM = PARENT | REM = HTML DOCUMENT -->
+
+  <!-- SPACING UTILITIES (VERY IMPORTANT, ONLY ON BOOTSTRAP4) -->
+  <!-- Border utility -->
+  <h5 class="border">GIVE ME A BORDER</h5>
+
+  <!-- The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.
+
+  Where property is one of:
+
+  m - for classes that set margin
+  p - for classes that set padding
+  Where sides is one of:
+
+  t - for classes that set margin-top or padding-top
+  b - for classes that set margin-bottom or padding-bottom
+  l - for classes that set margin-left or padding-left
+  r - for classes that set margin-right or padding-right
+  x - for classes that set both *-left and *-right
+  y - for classes that set both *-top and *-bottom
+  blank - for classes that set a margin or padding on all 4 sides of the element
+  Where size is one of:
+
+  0 - for classes that eliminate the margin or padding by setting it to 0
+  1 - (by default) for classes that set the margin or padding to $spacer * .25
+  2 - (by default) for classes that set the margin or padding to $spacer * .5
+  3 - (by default) for classes that set the margin or padding to $spacer
+  4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+  5 - (by default) for classes that set the margin or padding to $spacer * 3
+  auto - for classes that set the margin to auto -->
+
+  <!-- Padding -->
+  <!-- Remove padding from all sides -->
+  <button class="btn btn-info p-0">P0</button>
+  <!-- Adding padding for all sizes -->
+  <button class="btn btn-info p-1">P0</button>
+  <button class="btn btn-info p-2">P0</button>
+  <button class="btn btn-info p-3">P0</button>
+  <button class="btn btn-info p-4">P0</button>
+  <!-- Adding padding for top and bottom -->
+  <button class="btn btn-info pt-4">P0</button>
+  <button class="btn btn-info pb-4">P0</button>
+  <!-- Top && bottom || Right && Left -->
+  <button class="btn btn-info py-4">P0</button>
+  <button class="btn btn-info px-4">P0</button>
+
+  <!-- Margin -->
+  <div class="container">
+    <p class="bg-success text-white m-0">I AM A M-0</p>
+    <p class="bg-success text-white m-1">I AM A M-0</p>
+    <p class="bg-success text-white m-2">I AM A M-0</p>
+    <p class="bg-success text-white m-3">I AM A M-0</p>
+    <p class="bg-success text-white m-4">I AM A M-0</p>
+    <p class="bg-success text-white m-5">I AM A M-0</p>
+  </div>
+  <!-- Podemos fazer o mesmo que fizemos no padding, com as mesmas notações, trocando p pelo m. -->
+
+  <!-- (padding or magin, padding or margin option, location) -->
+
+
+  <!--  -->
+
+  <!-- RESPONSIVE BREAKPOINTS (MEDIA QUERIES) -->
+
+  <!-- // Extra small devices (portrait phones, less than 576px)
+  // No media query for `xs` since this is the default in Bootstrap
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... } -->
+
+
+  <!-- DOING SPECIAL SPACING ACORDING TO THE SIZE OF THE SCREEN (MEDIA QUERIE) (VERY IMPORTANT) -->
+
+  {property}{sides}-{size} for XS
+  {property}{sides}-{breakpoint}-{size} for sm, md, lg and xl.
+
+  <button class="btn btn-warning p-sm-5 p-md-0 p-lg-3">button
+  </button>
+
+  <!-- Breakpoint is not only the media querie size, but the size and above! -->
+
+  <!-- We can't do "p-xs-0" -->
+  <!-- Instead, we use: -->
+
+  <button class="btn btn-danger p-0">
+
+    Hello
+
+  </button>
+
+  <!-- Because is XS and up, and XS is the minimum media querie. And this apply to everything -->
+
+  <!-- To center all the container text -->
+  <div class="container text-center">
+
+    <button class="btn btn-primary p-4 mx-sm-3 mx-lg-4 mx-xl-5">hi</button>
+    <button class="btn btn-primary p-4 mx-sm-3 mx-lg-4 mx-xl-5">hi</button>
+    <button class="btn btn-primary p-4 mx-sm-3 mx-lg-4 mx-xl-5">hi</button>
+    <button class="btn btn-primary p-4 mx-sm-3 mx-lg-4 mx-xl-5">hi</button>
+
+  </div>
+
+  <!-- Navbar changes -->
+  <!-- We can't say to collapse navbar at certain point, we need to change things on css bootstrap file. Responsive navbars are applied with  the class .navbar-expand-{breakpoint}-->
+  <!-- No navbar-default, is now .navbar-light, .navbar-dark -->
+
+  <div class="container">
+    <h1 class="text-center display-3">Navbars</h1>
+
+  </div>
+
+  <!-- navbar navbar-expand-lg is when to expand  -->
+  <!-- navbar-dark changes to the dark theme (text color), bg-light changes the background -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Display utilities -->
+  <!-- To display or hide something on mobile or desktop -->
+  .d-{value} for xs
+  .d-{breakpoint}-{value} for sm, md, lg, and xl.
+
+  <h1 class="d-xl-none">Hide me on XL</h1>
+  <h1 class="d-none d-lg-block d-xl-none">Always hidden, except large</h1>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <!-- For hiding only at XL d-none is appyling to xs, and i am apply sm and above to show block afterwards -->
+    <p class="lead d-none d-sm-block">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </div>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
